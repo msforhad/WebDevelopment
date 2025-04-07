@@ -44,3 +44,9 @@ Or
 force push (if you're sure):
 Terminal e:bash
 git push -u origin main --force
+
+#------single file add korar process-----------
+
+git add index.html
+git commit -m "Add index.html file"
+git push -u origin main
