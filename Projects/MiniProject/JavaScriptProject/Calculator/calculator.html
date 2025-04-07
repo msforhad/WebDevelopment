@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    First Number <input class="input" type="number"><br>
+    Second Number <input class="input" type="number"><br>
+    <button>Add</button><br>
+    Output <input class="input" type="number">
+</body>
+<script>
+    let input = document.querySelectorAll(".input");
+    let btn = document.querySelector('button');
+    btn.addEventListener('click',()=>{
+        let input1 =Number(input[0].value);
+        let input2 = Number(input[1].value);
+        input[2].value = input1+input2;
+        input[0].value = '';
+        input[1].value = '';
+    })
+</script>
+</html>

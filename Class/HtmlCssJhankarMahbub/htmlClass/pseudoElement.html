@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::before{
+            content:"Md. mehedi hasan ";
+            color: red;
+            font-size: 40px;
+        }
+        #md::after{
+            content: "mehedi hasan forhad";
+            color: burlywood;
+            font-size: 40px;
+        }
+
+        body {
+            counter-reset: section;
+        }
+        .count::before{
+            counter-increment: section;
+            content: ""counter(section)": ";
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <h1>forhad</h1>
+    <p id="md">Md.</p>
+
+    <p class="count">forhad</p>
+    <p class="count">mehedi</p>
+    <p class="count">hasan</p>
+    <p class="count">md.</p>
+
+    
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore grid area</title>
+    <style>
+        .head,.navbar,.main-section,.sidebar,.ad,.footer-section{background-color:khaki;}
+
+        .head{grid-area: head;}
+        .navbar{grid-area: navbar;}
+        .main-section{grid-area: main-section;}
+        .sidebar{grid-area: sidebar;}
+        .ad{grid-area: ad;}
+        .footer-section{grid-area: footer-section;}
+
+        .container{
+                   display: grid;
+                   gap: 20px;
+                   grid-template-areas: 
+                   
+                   "head  head  head  head"
+                   "navbar   main-section  main-section sidebar"
+                   "navbar   main-section  main-section  ad"
+                   "footer-section footer-section footer-section footer-section";
+        }
+         
+
+    </style>
+</head>
+<body class="container">
+    <div class="head">
+        <p class="head-text">The Header</p>
+    </div>
+    <nav class="navbar">
+        <a href="">nav-1</a><br>
+        <a href="">nav-2</a><br>
+        <a href="">nav-3</a><br>
+
+    </nav>
+    <main class=" main-section">
+        <h3>Main Article Area</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quam, laboriosam esse sint, nesciunt, illum fuga repudiandae animi autem dolores nihil. Neque dolore, aliquam, est accusamus consequuntur distinctio iusto ipsum ullam, eligendi enim vitae velit laborum dolorum doloremque ducimus et repellat modi atque facere explicabo inventore. Quibusdam exercitationem labore dicta, reprehenderit laboriosam ducimus asperiores? Culpa illo perspiciatis explicabo non quod nihil ratione maxime illum vero expedita, rerum et reiciendis, id temporibus aspernatur placeat quidem perferendis aut at nisi blanditiis! Consectetur, eum vero. Recusandae impedit sint, culpa adipisci ducimus quas magnam alias voluptatum est saepe hic consequatur voluptas quisquam incidunt illo.
+        </p>
+         
+    </main>
+    <section class=" sidebar">
+        Sidebar
+
+    </section>
+
+    <section class="ad">Advetising</section>
+
+    <footer class="footer-section">
+        <p>The foot</p>
+    </footer>
+     </body>
+</html>

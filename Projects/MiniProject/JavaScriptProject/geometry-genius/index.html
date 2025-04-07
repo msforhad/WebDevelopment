@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="flex flex-col lg:flex-row mt-10 ml-6">
+            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card w-[330px] bg-base-100 shadow-xl hover:bg-pink-200">
+                    <figure class="mt-8 px-10"><img src="images/triangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title mx-auto">Triangle</h2>
+                      <p class="mx-auto">Area (A) = 0.5 x b x h</p>
+                      <p class="mx-auto mt-6">
+                        <input id="triangle-input1" class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="base">
+                        <span class="ml-1 mr-4">cm</span>
+
+                        <input id="triangle-input2" class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="height">
+                        <span class="ml-1">cm</span>
+                      </p>
+                     <div class="card-actions justify-end">
+                        <button id="caclculate-1" class="btn bg-blue-500 hover:text-black text-white px-24 mx-auto mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card w-[330px] bg-base-100 shadow-xl hover:bg-pink-200">
+                    <figure class="mt-8 px-10"><img src="images/rectangle.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title mx-auto">Rectangle</h2>
+                      <p class="mx-auto">Area (A) = w x l</p>
+                      <p class="mx-auto mt-6">
+                        <input class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="width">
+                        <span class="ml-1 mr-4">cm</span>
+
+                        <input class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="length">
+                        <span class="ml-1">cm</span>
+                      </p>
+                     <div class="card-actions justify-end">
+                        <button class="btn bg-blue-500 hover:text-black text-white px-24 mx-auto mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card w-[330px] bg-base-100 shadow-xl hover:bg-pink-200">
+                    <figure class="mt-8 px-10"><img src="images/parallelogram.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title mx-auto">parallelogram</h2>
+                      <p class="mx-auto">Area (A) = b x h</p>
+                      <p class="mx-auto mt-6">
+                        <input class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="base">
+                        <span class="ml-1 mr-4">cm</span>
+
+                        <input class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="height">
+                        <span class="ml-1">cm</span>
+                      </p>
+                     <div class="card-actions justify-end">
+                        <button class="btn bg-blue-500 hover:text-black text-white px-24 mx-auto mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div> 
+
+                  <div class="card w-[330px] bg-base-100 shadow-xl hover:bg-pink-200">
+                    <figure class="mt-8 px-10"><img src="images/rhombus.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title mx-auto">Rhombus</h2>
+                      <p class="mx-auto">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                      <p class="mx-auto mt-6">
+                        <input class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="d1">
+                        <span class="ml-1 mr-4">cm</span>
+
+                        <input class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="d2">
+                        <span class="ml-1">cm</span>
+                      </p>
+                     <div class="card-actions justify-end">
+                        <button class="btn bg-blue-500 hover:text-black text-white px-24 mx-auto mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card w-[330px] bg-base-100 shadow-xl hover:bg-pink-200">
+                    <figure class="mt-8 px-10"><img src="images/pentagon.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title mx-auto">Pentagon</h2>
+                      <p class="mx-auto">Area (A) = 0.5 x p x b</p>
+                      <p class="mx-auto mt-6">
+                        <input class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="p">
+                        <span class="ml-1 mr-4">cm</span>
+
+                        <input class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="b">
+                        <span class="ml-1">cm</span>
+                      </p>
+                     <div class="card-actions justify-end">
+                        <button class="btn bg-blue-500 hover:text-black text-white px-24 mx-auto mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card w-[330px] bg-base-100 shadow-xl hover:bg-pink-200">
+                    <figure class="mt-8 px-10"><img src="images/ellipse.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title mx-auto">Ellipse</h2>
+                      <p class="mx-auto">Area (A) = πab</p>
+                      <p class="mx-auto mt-6">
+                        <input class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="a">
+                        <span class="ml-1 mr-4">cm</span>
+
+                        <input class="border w-20 px-2 py-1  bg-gray-100 rounded" type="text" name="" id="" placeholder="b">
+                        <span class="ml-1">cm</span>
+                      </p>
+                     <div class="card-actions justify-end">
+                        <button class="btn bg-blue-500 hover:text-black text-white px-24 mx-auto mt-6">Calculate</button>
+                      </div>
+                    </div>
+                  </div>
+
+                
+
+            </div>
+            <div class="w-[320px]  border-2 border-gray-200   h-96 mt-8 ml-3">
+                 <h3  class="text-2xl font-semibold underline mt-6 underline-offset-8 text-center">Area Calculate</h3> <div id="calculate-area">
+                    <div class="mt-8">
+                    <span id="add-text" class="mt-8 pl-4"> </span>
+                    <span id="add-triangle-area-value"></span>
+                    <span id="add-cm"></span>
+                    <span id="add-btn"></span>
+                    
+                    </div>
+
+                 </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/utilitis.js"></script>
+    <script src="js/calculate.js"></script>
+</body>
+</html>

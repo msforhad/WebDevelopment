@@ -1,0 +1,32 @@
+@media only screen and (min-width:200px) and (max-width:575.9px){
+    .logo-name {
+        padding-left: 30px;
+
+    }
+    .mode-btn{
+        align-items: end;
+    }
+    .slider{
+        text-align: start;
+    }
+    .header-link-div{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:991px){
+    .logo-name .logo-link{
+        text-decoration: none;
+        color: black;
+        font-family: "Saira Stencil One", serif;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .link-div ul li{
+        font-family: "Poppins", serif !important;
+        font-weight: 500;
+        color: black;
+        font-size: 0.8rem;
+    }
+
+}

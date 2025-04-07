@@ -1,0 +1,29 @@
+
+header{
+        height: 1200px;
+        background-image: url(../images/messi.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position:100%; */
+        /* background-blend-mode: color; */
+
+
+}
+.blog{margin: 50px;
+      border: 10px solid red;
+      padding:10px;
+      box-shadow: 10px 10px 10px gray;
+      border-radius: 25px;
+ }
+
+ .second{display: non;
+         text-decoration: underlin;
+         
+         font-size: 20px;
+         font-family: fantas;
+
+         }
+
+.totam{border: 15px solid red;
+       margin:15px;
+       font-weight: bolder;}

@@ -1,0 +1,54 @@
+.nav-logo{
+    border-radius: 100px;
+    width: 60px;
+}
+.icon-padding{
+    padding-right: 5px;
+}
+.btn-info {
+    --bs-btn-color: #fff !important;
+    --bs-btn-hover-color: hotpink !important;
+
+}
+.banner-content h1{
+    font-size: 52px;
+    font-weight: 700;
+}
+.banner-content h1 span{
+    color: #2699FB;
+    
+}
+.banner-content p{
+    font-size: 22px;
+}
+.banner-content ul{
+    list-style: none;
+
+}
+.banner-content li{
+    font-size: 18px;
+}
+.banner-content ul li i{
+    color: #2699FB;
+    padding-right: 10px;
+}
+.banner-content-btn button{
+    width: 50%;
+}
+.banner-content-btn button i{
+    padding-right: 15px;
+}
+.banner-content-btn button:first-child{
+    font-weight: 500;
+}
+.banner-form{
+    padding: 40px;
+}
+.form-btn button{
+    width: 100%;
+}
+.counter-section h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #2699FB;
+}

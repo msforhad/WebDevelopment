@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed Selectors</title>
+    <style>
+        /* *{margin:0%;} */
+        #selector{
+            color:red
+        }
+       ol,li,.odd, .even{ font-size: 30px;
+               font-weight: 800;
+               color: brown;
+        }
+        ol,li,.odd{background-color: aqua;
+             width: 25%;}
+
+        input{background-color: blueviolet;
+              color:azure}
+              input[type="text"]{font-size: 30px;}
+    </style>
+</head>
+<body>
+    <h3 id="selector">Exploring mixed selectors</h3>
+    <p class="even">My first line css</p>
+    <p class="odd">My second line css</p>
+    <p class="even">My third line css</p>
+    <p class="odd">My fourth line css</p>
+    <p class="even">My fifth line css</p>
+    <p class="odd">My sixth line css</p>
+    <p class="even">My seventh line css</p>
+    <p class="odd">My eighth line css</p>
+
+    <ol>
+        <li>pape</li>
+        <li>anarosh</li>
+        <li>tometo</li>
+    </ol>
+
+    <form action="">
+        <input type="text" placeholder="your name">
+        <input type="email" placeholder="your email" name="" id="">
+        <input type="password" placeholder="your password" name="" id="">
+    </form>
+    
+</body>
+</html>

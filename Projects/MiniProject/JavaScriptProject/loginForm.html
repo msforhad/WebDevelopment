@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url('/WsCubeTech/images/boy.jpg');
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            width: 300px;
+            background: rgba(0, 0, 0, 0.887);
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0px 0px 5px 1px white;
+            height: 400px;
+            overflow: hidden;
+
+        }
+        .main form{
+            width: 100%;
+            padding: 60px 30px;
+            position: absolute;
+            top: 0;
+            transition: 0.5s;
+        }
+        h1{
+            color: white;
+        }
+        .main form input{
+            width: 100%;
+            padding: 10px 5px;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid white;
+            margin: 10px 0;
+            
+        }
+        .btns{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .btns button{
+            padding: 10px 30px;
+            border-radius: 15px;
+            border: none;
+            background: linear-gradient(45deg,red,yellow);
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .form1{
+            left: 0;
+        }
+        .form2,
+        .form3{
+            left: 100%;
+        }
+        .progress{
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            border-bottom: 1px solid white;
+            color: white;
+            display: flex;
+            justify-content: center;
+
+        }
+        .progress .step{
+            width: 35%;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 3px 0px;
+            z-index: 2;
+        }
+        .progressBar{
+            position: absolute;
+            width: 35%;
+            background: linear-gradient(to right ,red,yellow);
+            height: 100%;
+            z-index: 1;
+            left: 0;
+            transition: 0.4s;
+        }
+        .progressBar::after{
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 0;
+            right: -14.5px;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 15px solid yellow;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form class="form1">
+            <h1>Create Account</h1>
+            <input type="text" placeholder="E-Mail">
+            <input type="password" placeholder="password">
+            <input type="password" placeholder="Confirm password">
+            <div class="btns">
+                <button type="button" onclick="nextToForm2()">Next</button>
+            </div>
+        </form>
+
+        <form class="form2">
+            <h1>Personal Details</h1>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Second Name">
+            <input type="number" placeholder="Mobile Number">
+            <div class="btns">
+                <button type="button" onclick="prevToForm1()">Prev</button>
+                <button type="button" onclick="nextToForm3()">Next</button>
+            </div>
+        </form>
+    
+        <form class="form3">
+            <h1>Social Link</h1>
+            <input type="text" placeholder="Linkedin">
+            <input type="text" placeholder="Github">
+            <input type="text" placeholder="Medium">
+            <div class="btns">
+                <button type="button" onclick="prevToForm2()">Prev</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+
+        <div class="progress">
+            <div class="progressBar"></div>
+            <div class="step">Step1</div>
+            <div class="step">Step2</div>
+            <div class="step">Step3</div>
+        </div>
+    </div>
+
+    
+</body>
+<script type="text/javascript">
+    const forms = document.querySelectorAll('form');
+    let progressBar = document.querySelector('.progressBar');
+    const nextToForm2 =()=>{
+        forms[0].style.left = '-100%';
+        forms[1].style.left = '0';
+        progressBar.style.width = '65%'
+
+    }
+    const prevToForm1=()=>{
+        forms[1].style.left = '100%';
+        forms[0].style.left = '0';
+         progressBar.style.width = '35%'
+
+       
+
+    }
+    const nextToForm3=()=>{
+        forms[1].style.left = '-100%';
+        forms[2].style.left = '0';
+         progressBar.style.width = '100%'
+    }
+    const prevToForm2=()=>{
+        forms[2].style.left = '100%';
+        forms[1].style.left = '0';
+         progressBar.style.width = '65%'
+
+    }
+
+</script>
+</html>

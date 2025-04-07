@@ -1,0 +1,64 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+}
+
+.logos img {
+    width: 160px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+
+@media (max-width: 650px) {
+    .logos img {
+        width: 80px;
+        height: 120px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .logos img {
+        width: 320px;
+        height: 460px;
+        border-radius: 10px;
+    }
+}

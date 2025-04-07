@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.over{
+            background-color: coral;
+            width: 200px;
+            height: 65px;
+            border: 1px solid black;
+            /*overflow: visible;*/
+            /*overflow: hidden;*/
+            /*overflow: scroll;*/
+            /*overflow: auto;*/ /*auto - Similar to scroll*/
+            /*overflow-x: visible;*/
+            /*overflow-x: hidden;*/
+            /*overflow-x: scroll;*/ /* Hide horizontal scrollbar */
+            /*overflow-x: auto;*/
+            /*overflow-y: hidden;*/
+            /*overflow-y: visible;*/
+            /*overflow-y: scroll;*/ /* Add vertical scrollbar */
+            /*overflow-y: auto;*/
+        }
+        div.a{
+            margin-top: 100px;
+            width: 150px;
+            border: 2px solid black;
+
+        }
+        .a{
+            /*overflow-wrap: normal;*/
+            /*overflow-wrap: break-word;*/
+            overflow-wrap: anywhere ;
+
+        }
+    </style>
+</head>
+<body>
+    <h2>Overflow: hidden</h2>
+
+<p>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</p>
+<p>Try to remove the overflow property to understand how it works.</p>
+<div class="over">
+    You can use the overflow property when you want to have better control of the layout. 
+    The overflow property specifies what happens if content overflows an element's box.
+
+</div><br>
+
+<div class="a">
+    You can use the overflow property when you want  hgfdfghjkjhgfghjkjhgtfrghjkjhgfghjkhgfdghjhgfdfghjhgfdfghjhgfkjhgfto have better control of the layout. 
+    The overflow property specifies what happens if content overflows an element's box.
+
+</div>
+    
+</body>
+</html>

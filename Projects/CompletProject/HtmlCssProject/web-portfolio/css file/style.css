@@ -1,0 +1,122 @@
+body{
+  margin: 0;
+}
+.jw {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .wc {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+  }
+  .orange-highlight{
+    color: orange;
+    font-weight: 1000;
+    font-family: "Poppins",sans-serif;
+  }
+  .first-width{
+    width: 40%;
+    float: left;
+    margin-left: 2%;
+  }
+  .half-width{
+    width: 40%;
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding-left: 2%;
+
+  }
+  .half-width img{
+    width: 100%;
+  }
+
+  section{
+    height: 500px;
+  }
+  .link-botton{
+    text-decoration: none;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    background-image: linear-gradient(45deg, lightSalmon, tomato);
+  }
+  .second-first-width{
+    width: 40%;
+  }
+
+  .second-first-width img{
+    width: 100%;
+    margin-top: 50px;
+    float: left;
+    margin-left: 5%;
+  }
+  .second-half-width{
+    width: 40%;
+    float: right;
+    padding-top: 5%;
+    padding-right: 5%;
+  }
+h2{
+  font-size: 40px;
+  font-weight: 700;
+}
+h3{
+  font-size: 30px;
+}
+p{
+  color: dimgray;
+}
+.download{
+  text-decoration: none;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 700;
+    background-image: linear-gradient(45deg, lightSalmon, tomato);
+}
+h2.exp{
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-left: 5%;
+}
+.same{
+  font-size: 30px;
+  font-weight: 700;
+}
+.same-{
+  font-size: 20px;
+}
+
+.first{
+  box-shadow: 10px 10px 40px gray;
+  width: 40%;
+  height: 80%;
+  margin-left: 5%;
+  margin-bottom: 2%;
+  padding-left: 20px;
+  float: left;
+  border-radius: 5px;
+  height: 80%;
+  border-left: 7px solid lightseagreen;
+
+}
+.second{
+  box-shadow: 10px 10px 40px gray;
+  width: 40%;
+  height: 80%;
+  float: right;
+  margin-right: 5%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+  padding-left: 20px;
+  border-left: 7px solid rgb(211, 97, 226);
+}

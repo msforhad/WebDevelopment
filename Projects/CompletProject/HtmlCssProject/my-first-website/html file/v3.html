@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="/MyProject/my-first-website/css file/v3.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Your Name</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="login-btn" onclick="openLogin()">Login</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Hello, I'm <span>Your Name</span></h2>
+            <p>A passionate [Your Profession] creating amazing web experiences.</p>
+            <a href="#projects" class="btn">See My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Your Profile Photo" class="profile-photo">
+                <p>
+                    I'm a [Your Profession] with experience in [Key Skills]. I graduated from 
+                    <strong>[Your Institution Name]</strong>. I love solving problems, designing 
+                    elegant solutions, and collaborating with teams.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Project 1</h3>
+                    <p>Description of your project. Explain what you built and technologies used.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 2</h3>
+                    <p>Description of your project. Explain what you built and technologies used.</p>
+                </div>
+                <div class="project">
+                    <h3>Project 3</h3>
+                    <p>Description of your project. Explain what you built and technologies used.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you'd like to work together or have any questions, feel free to reach out!</p>
+            <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Your Name. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+                <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Form Modal -->
+    <div id="loginModal" class="login-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeLogin()">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

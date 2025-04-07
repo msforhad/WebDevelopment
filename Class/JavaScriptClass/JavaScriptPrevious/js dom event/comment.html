@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add your comment</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quos, harum enim incidunt laboriosam provident omnis, minima unde explicabo aliquid sapiente quis. Molestias laudantium sapiente rem qui impedit! Nostrum odit ducimus error commodi, minima porro, consequatur ea sit exercitationem quas, expedita molestiae. Quibusdam alias temporibus aliquid asperiores, necessitatibus facilis quasi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quos, harum enim incidunt laboriosam provident omnis, minima unde explicabo aliquid sapiente quis. Molestias laudantium sapiente rem qui impedit! Nostrum odit ducimus error commodi, minima porro, consequatur ea sit exercitationem quas, expedita molestiae. Quibusdam alias temporibus aliquid asperiores, necessitatibus facilis quasi.</p>
+
+    <p id="comment3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quos, harum enim incidunt laboriosam provident omnis, minima unde explicabo aliquid sapiente quis. Molestias laudantium sapiente rem qui impedit! Nostrum odit ducimus error commodi, minima porro, consequatur ea sit exercitationem quas, expedita molestiae. Quibusdam alias temporibus aliquid asperiores, necessitatibus facilis quasi.</p>
+
+    <textarea name="" id="comment" cols="180" rows="10"></textarea>
+    <button id="click">post</button>
+
+    <script>
+         document.getElementById('click').addEventListener('click',function(){
+            const recieveCommentId = document.getElementById('comment');
+            const recieveComment = recieveCommentId.value;
+            const commentAddPlace3 = document.getElementById('comment3');
+            commentAddPlace3.innerText = recieveComment;
+            comment.value = '';
+
+         })
+    </script>
+     
+</body>
+</html>

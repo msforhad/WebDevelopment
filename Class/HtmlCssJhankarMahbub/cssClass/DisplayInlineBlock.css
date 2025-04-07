@@ -1,0 +1,52 @@
+/*-------- block eaement example:p,h,li,div----- */
+p{
+    background-color: red;
+    /* block convert to inline element */
+    /* display: inline; */
+}
+h1{
+    background-color: yellow;
+     /* block convert to inline element */
+    /* display: inline; */
+}
+ul{
+    background-color: green;
+     /* block convert to inline element */
+    /* display: inline; */
+}
+.first-li{
+    background-color: orange;
+     /* block convert to inline element */
+    /* display: inline; */
+}
+
+/*------------ inline element(span,a,img)------------ */
+span{
+    background-color: yellowgreen;
+    /* inline convert to block element */
+    /* display: block; */
+}
+a{
+    background-color: red;
+    /* inline convert to block element */
+    /* display: block; */
+}
+img{
+    width: 100px;
+    background-color: hotpink;
+    /* inline convert to block element */
+    /* display: block; */
+}
+
+.room{
+    width: 200px;
+    height: 150px;
+    border: 3px solid seagreen;
+    margin: 10px;
+    /* inline-block example */
+    /* display: inline-block; */
+}
+
+/* h3, p{
+    display: inline;
+} */

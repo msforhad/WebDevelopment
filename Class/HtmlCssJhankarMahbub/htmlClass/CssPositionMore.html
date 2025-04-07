@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            margin-left: 5px;
+            background-color: steelblue;
+
+        }
+
+        /*------- realtive and z index exampole------*/
+        /* .box-1{ 
+          position: relative;
+          left: 110px;
+          background-color: yellow; 
+          border: 3px solid green; 
+          z-index: 1; 
+         } 
+         .box-2{ 
+          position: relative;
+          left: 60px; 
+          background-color: red; 
+          border: 3px solid blue; 
+          z-index: 2; 
+         } 
+         .box-3{ 
+          z-index: 1; 
+          border: 3px solid; 
+         } */
+        
+
+        /* --------abolute------- */
+        /* .box-2{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: red;
+        }
+        .box-3{
+            z-index: 2;
+        } */
+
+
+        /* -------abolut and container position define------ */
+
+        /* .container{
+            position: relative;
+
+        }
+        .box-2{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+            background-color: red;
+        }
+        .box-3{
+            z-index: 2;
+        } */
+        
+    </style>
+</head>
+<body>
+    <h1>position</h1>
+    <h3>More position</h3>
+    <section class="container">
+        <div class="box-1 box">
+            <h3>box-1</h3>
+        </div>
+
+        <div class="box-2 box">
+            <h3>box-2</h3>
+        </div>
+
+        <div class="box-3 box">
+            <h3>box-3</h3>
+        </div>
+        <div class="box-4 box">
+            <h3>box-4</h3>
+        </div>
+        <div class="box-5 box">
+            <h3>box-5</h3>
+        </div>
+    </section>
+</body>
+</html>
