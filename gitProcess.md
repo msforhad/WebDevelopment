@@ -50,3 +50,27 @@ git push -u origin main --force
 git add index.html
 git commit -m "Add index.html file"
 git push -u origin main
+
+
+<!-- 🔄 Updated file GitHub-e push korar full process: -->
+
+✅ Step 1: Project Folder-e Jao (Terminal diye)
+
+cd path/to/your/project
+In your case:
+cd Projects/CompletProject/HtmlCssProject/e-school
+
+✅ Step 2: Git Status Check (optional)
+git status
+Ekhane dekhabe je index.html modified.
+
+✅ Step 3: File Add Koro
+git add index.html
+Ba sob file ekshathe add korte:
+git add .
+
+✅ Step 4: Commit Koro
+git commit -m "Updated index.html"
+
+✅ Step 5: Push Koro GitHub-e
+git push
