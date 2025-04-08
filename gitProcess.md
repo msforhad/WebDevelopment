@@ -1,13 +1,13 @@
-✅ Step-by-Step: VS Code Theke GitHub e Code Push Korar Full Process
+✅ Step-by-Step: VS Code Theke GitHub e Code Push Korar Full Process <br>
 
-🧱 Step 1: GitHub Repo Create Koro
+🧱 Step 1: GitHub Repo Create Koro <br>
 
-1.GitHub e jao → https://github.com/
-2."New repository" e click koro
-3.Repository name dao (e.g., MyReactProject)
-4.README / .gitignore check korona
-5.Create repository button e click koro
-6.Repo URL copy koro (e.g. https://github.com/msforhad/MyReactProject.git)
+1.GitHub e jao → https://github.com/ <br>
+2."New repository" e click koro <br>
+3.Repository name dao (e.g., MyReactProject) <br>
+4.README / .gitignore check korona <br>
+5.Create repository button e click koro <br>
+6.Repo URL copy koro (e.g. https://github.com/msforhad/MyReactProject.git) <br>
 
 📁 Step 2: VS Code e Project Folder Open Koro
 VS Code e jei folder push korte chau, seta open koro.
@@ -47,12 +47,12 @@ git push -u origin main --force
 
 #------single file add korar process-----------
 
-git add index.html
-git commit -m "Add index.html file"
-git push -u origin main
+git add index.html <br>
+git commit -m "Add index.html file" <br>
+git push -u origin main <br>
 
 
-<!-- 🔄 Updated file GitHub-e push korar full process: -->
+#--------🔄 Updated file GitHub-e push korar full process:-------
 
 ✅ Step 1: Project Folder-e Jao (Terminal diye)
 
