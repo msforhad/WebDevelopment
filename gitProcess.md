@@ -35,7 +35,14 @@ Terminal e:bash <br>
 git push -u origin main <br>
 
 If you get the hint: Updates were rejected error, then: <br>
+
 Terminal e:bash <br>
+<!-- better hobe aii code tha run korle -->
+git pull origin main --rebase <br>
+git push origin main<br>
+
+or<br>
+
 git pull origin main --allow-unrelated-histories <br>
 git push -u origin main <br>
 
